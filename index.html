@@ -1,0 +1,210 @@
+<?php
+if($_POST["message"]) {
+    mail("Oksana.Myronovych@ndsu.edu ", "UPE Membership Request", $_POST["message"], "From: UPEAutoMailer@NDSU-UPE.com");
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>UPE@NDSU | Upsilon Pi Epsilon Honor Society</title>
+    <meta name="author" content="Carey Wilson">
+    <meta name="description" content="Upsilon Pi Epsilon NDSU chapter website.">
+    <meta name="viewport" content="width=1000">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"  href="css/form.css" />
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/formJS.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#welcome" title="Upsilon Pi Epsilon @ NDSU" class="nav_active">UPE@NDSU</a>
+        </li>
+        <li>
+          <a href="#about" title="About Upsilon Pi Epsilon">About</a>
+        </li>
+        <li>
+          <a href="#join" title="How to join Upsilon Pi Epsilon">Join</a>
+        </li>
+        <li>
+          <a href="#members" title="Members of Upsilon Pi Epsilon">Members</a>
+        </li>
+        <li>
+          <a href="#news" title="News Updates in Upsilon Pi Epsilon">News</a>
+        </li>
+      </ul>
+    </nav>
+    <a id="facebook" href="https://www.facebook.com/groups/159119384151419/" target="_blank">ACM@NDSU</a>
+    
+    <!----------------------------------------------------
+                    Welcome Section
+    ----------------------------------------------------->
+    <section id="welcome">
+      <img src="img/UPELogoBison.jpg" alt="Upsilon Pi Epsilon at NDSU" class="cover invisible"> 
+    </section>
+    
+    <!----------------------------------------------------
+                    About Section
+    ----------------------------------------------------->  
+    <section id="about" class="page">
+      <div class="container">
+        <h2>About UPE</h2>
+        <p>Upsilon Pi Epsilon is an honor society whose members are among the most outstanding undergraduate and graduate Computer Science, Management Information Systems, and Software Engineering students at NDSU.  UPE holds events for members and students aiming to help them gain the skills and information that will help them both during their time at NDSU and in their continuing professional lives.  Members of UPE are encouraged to grow in their understanding of the discipline by mentoring and tutoring newer students.  Frequent tech talks sponsored by UPE made by many different types of companies expose NDSU students to many exciting topics outside of the classroom.  Company events provide networking opportunities for students to help them get their feet in the door through internships and research opportunities.  Scholarships are offered through the UPE organization to members in order to encourage our continuing excellence.  The overall mission of Upsilon Pi Epsilon is to recognize academic excellence at both the undergraduate and graduate levels in the Computing and Information Disciplines.</p>
+        <h3>What we do</h4>
+        <p>Upsilon Pi Epsilon events include student mentorship, tech talks, professor talks, and company information sessions.  Members both learn and teach through becoming mentors of incoming underclassmen. Tech talks aim to get students excited about innovations and current technologies.  Company information sessions make students aware of the wide range of opportunities that are available to them, ranging from startups to small companies to grad school to government agencies to huge corporations.
+        </p>
+        <h3>Getting involed</h4>
+        <p>If you would like to get involved with UPE as a member, watch out for emails about events we need volunteers for. Helping out with setting up events, being a mentor, or other things we might need gives you opportunities to build contacts with people in industry as well as people in UPE. All members are also eligible to become officers and elections are held every Spring.
+      </p>
+    </div>
+    </section>
+      
+      
+    <section class="in-between_pic transitionOne" data-type="background" data-speed="10"></section>
+    <!----------------------------------------------------
+                    Join Section
+    ----------------------------------------------------->  
+    <section id="join" class="page" onclick = "check(event)" style="overflow:hidden;" >
+        <h2>Join our local chapter</h2>
+          <div class="container">
+          <div class="column-left">
+            <h3>Undergraduate Requirements</h3>
+            <p>To be eligible for election to membership, undergraduate students must rank in the upper 35% of the class and shall have attained a GPA, in all college work thus far completed, of not less than 3.0/4.0 grade-points. Furthermore the candidate shall have completed at least 45 semester hours of college work including 15 semester hours in the basic courses in the Computing and Information Disciplines. The Chapter shall have the right to set any limit above this minimum attainment as a basis for eligibility. </p>
+          </div>
+          <div class="column-center">
+            <h3>Graduate Requirements</h3>
+            <p>In order to be eligible for election such graduate students must rank in the upper 35% of the class and shall have been in graduate residence at NDSU at least one semester and shall have completed at least one-half of the number of semester-hours of graduate work normally required for the master's degree, with a GPA of at least 3.5/4.0. The Chapter shall have the right to set any limit above this minimum as a basis for determining eligibility. The scholarship record may be supplemented by information from the candidate's director of research as to the quality of his performance, if such research is already in progress. A student who was invited to join UPE as an undergraduate may be re-invited as a first semester graduate student if his undergraduate scholarship rating was at least 3.5/4.0.</p>
+          </div>
+          <div class="column-right">
+            <h3>Faculty Requirements</h3>
+            <p>This section includes persons who are members of the faculties of programs that are related to the Computing and Information Disciplines or other allied computer fields. In order to be eligible for membership, such faculty members shall have been in full time employ of NDSU for at least one-half year and in responsible charge of some of the undergraduate or graduate courses or important research work of the institution. Eligibility of a faculty member shall be based mainly upon his/her present achievements as denoted by his/her degrees, rank, publications, high standards of scholarship maintained in classes or research work, honors and membership in other societies, and potential future interests in our Association.</p>
+          </div>
+        </div>
+        
+        <div id="buttonPos"><button class="column-center" id = "popup" onclick ="div_show()">Request Membership</button></div>
+        
+ <div id="abc">
+ 
+	 <!-- Popup div starts here -->
+ <div id="popupContact"> 
+
+	<!-- contact us form -->
+		<form action="index.php" method="post" id="form" >
+			<img src="img/form/3.png" id="close"/>
+			<h2 id="formHead">Request Membership</h2><hr/>
+			<input type="text" name="name" id="name" placeholder="Full Name"/>
+            <input type="text" name="studentid" id="studentid" placeholder="Student ID#"/>
+			<input type="text" name="email" id="email" placeholder="Email"/>
+            <br><span class="labels">Degree Level:</span>
+            <select name="degree" id="degree">
+              <option value="-" selected>-</option>
+              <option value="Undergraduate">Undergraduate</option>
+              <option value="Undergraduate">Graduate</option>
+              <option value="Undergraduate">Faculty</option>
+            </select>
+            <br><span class="labels">Year:</span><br>
+			<select name="class" id="class">
+              <option value="-" selected>-</option>
+              <option value="Freshman">Freshman</option>
+              <option value="Sophmore">Sophmore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+            </select>
+            <br><span class="labels">Expected Graduation Date:</span>
+            <select name="gradTerm" id="gradTerm">
+              <option value="-" selected>-</option>
+              <option value="Fall">Fall</option>
+              <option value="Spring">Spring</option>
+              <option value="Summer">Summer</option>
+            </select>
+            <input type="text" name="year" id="year" placeholder="Year"/>
+            <textarea name="message" placeholder="Message" id="msg"></textarea>
+			<a id="submit" href="javascript: check_empty()">Send</a>
+		</form>
+ </div> 
+ <!-- Popup div ends here -->
+ </div>
+    
+    </section>
+    
+      
+    <section class="in-between_pic transitionTwo" data-type="background" data-speed="10"></section>
+    <!----------------------------------------------------
+                    Members Section
+    ----------------------------------------------------->
+    <section id="members" class="page">
+
+          <h2> Executive Council</h2>
+          <table>
+              <tr>
+                <td>President<br><img src="img/members/sameer.jpg" alt="Photo of Sameer"><br>Sameer Abufardeh</td>
+                <td>Vice President<br><img src="img/members/pratap.jpg" alt="Photo of Pratap"><br>Pratap Kotala</td>
+                <td>Faculty Advisor<br><img src="img/members/gursimran.jpg" alt="Photo of Gursimran"><br>Gursimran Walia</td>
+              </tr>
+              <tr><td><br></td></tr>
+              <tr>
+                <td>Secretary<br><img src="img/members/stephanie.jpg" alt="Photo of Stephanie"><br>Stephanie Sculthorp</td>
+                <td>Treasurer/Historian<br><img src="img/members/oksana.jpg" alt="Photo of Oksana"><br>Oksana Myronovych</td>
+                <!-- <td>Web Developer<br><img src="img/members/carey.jpg" alt="Photo of Carey"><br>Carey Wilson</td> -->
+              </tr>
+          </table>
+          <h2> Student Members</h2>
+          <table>
+              <tr>
+                <td>Student Name</td>
+                <td>Student Name</td>
+                <td>Student Name</td>
+                <td>Student Name</td>
+                <td>Student Name</td>
+              </tr>
+              <tr><td><br></td></tr>
+              <tr>
+                <td>Student Name</td>
+                <td>Student Name</td>
+                <td>Student Name</td>
+                <td>Student Name</td>
+                <td>Student Name</td>
+              </tr>
+          </table>
+    </section>
+    
+      
+    <section class="in-between_pic transitionThree" data-type="background" data-speed="20"></section>
+    <!----------------------------------------------------
+                    News Section
+    ----------------------------------------------------->
+    <section id="news" class="page">
+      <div class="container">
+        <h2>News</h2>
+        <h3>Fall 2014</h3>
+          <p>Upsilon Pi Epsilon events include student mentorship, tech talks, professor talks, and company information sessions.  Members both learn and teach through becoming mentors of incoming underclassmen. Tech talks aim to get students excited about innovations and current technologies.  Company information sessions make students aware of the wide range of opportunities that are available to them, ranging from startups to small companies to grad school to government agencies to huge corporations.</p>
+    </div>
+    </section>
+    
+    <!----------------------------------------------------
+                    Footer
+    ----------------------------------------------------->
+    <footer>
+      <div class="made_by">
+        <p>
+          <a href="http://www.ndsu.edu/" title="NDSU Home Page" target="_blank">North Dakota State University</a> | <a href="http://cs.ndsu.edu/" title="CSCI Dept Page" target="_blank">Computer Science Department</a> | Quinten Burdick Building 258 | 701.231.8562
+        </p>
+      </div>
+    </footer>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/main.js"></script>
+            <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('send', 'pageview');
+
+  </body>
+</html>

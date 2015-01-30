@@ -1,0 +1,378 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+::-moz-selection {
+  background: rgb(252, 183, 57);
+  text-shadow: none;
+}
+::selection {
+  background: rgb(252, 183, 57);
+  text-shadow: none;
+}
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  outline: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  -ms-transition: color 0.1s linear;
+  -o-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 200%;
+  letter-spacing: 1px;
+}
+/* ===========
+   Main styles
+   =========== */
+html,
+body {
+  height: 100%;
+  min-width: 800px;
+  width: 100%;
+  font-family: "PT Sans", "Helvetica", "Arial", sans-serif;
+}
+body {
+  min-height: 100%;
+}
+#buttonPos {
+  text-align: center;  
+    margin-left: -12%;
+}
+/* ===========================
+         Navigation Bar
+   ========================= */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(8, 87, 63);
+  z-index: 60;
+  font-size: 90%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: outside;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+nav ul li a {
+  letter-spacing: 1px;
+  color: rgb(252, 183, 57);
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(255, 196, 35);
+  outline: none !important;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+nav ul li a:hover {
+  border-bottom: 2px solid;
+}
+nav ul li a.nav_active {
+  border-bottom: 0;
+  color: white;
+  cursor: default;
+  pointer-events: none;
+}
+nav ul li + li {
+  margin: 0 0 0 2em;
+}
+section {
+  min-height: 100%;
+  width: 100%;
+}
+
+/* ===========================
+         Welcome Section
+   ========================= */
+section#welcome {
+  position: relative;
+  text-align: center;
+  background-image: url("../img/cover_bg2.jpg");
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  height: 100%;
+  overflow: hidden;
+}
+section#welcome img.cover {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
+  padding: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* ===========================
+        Section Pages
+   ========================= */
+section.page {
+  *zoom: 1;
+  padding: 50px 10px 50px 50px;
+  min-height: 500px;
+    backgrond-color: white;
+}
+section.page:after {
+  clear: both;
+}
+section.page:before,
+section.page:after {
+  content: " ";
+  display: table;
+}
+section .container {
+  padding: 0px 100px 50px 0px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  float: left;
+}
+
+
+
+/* ===========================
+         Section Dividers
+   ========================= */
+section.in-between_pic {
+  background-repeat: no-repeat;
+  background-color: rgb(8, 87, 63);
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 40%;
+  min-height: 50%;
+  width: 100%;
+}
+section.in-between_pic.transitionTwo {
+  background-image: url("../img/Faculty.JPG");
+  background-color: rgb(8, 87, 63) ;
+}
+section.in-between_pic.transitionThree {
+  background-image: url("../img/faculty2.JPG");
+  background-color: rgb(8, 87, 63);
+}
+section.in-between_pic.transitionOne {
+  background-image: url("../img/SameerTable.JPG");
+  background-color: rgb(8, 87, 63);
+}
+
+
+/* ===========
+   3 Collumns
+   =========== */
+.column-left {
+  float: left; width: 32%;
+}
+.column-right {
+  float: right; width: 32%; margin-right: 20px;
+}
+.column-center {
+  display: inline-block; width: 32%; margin-left: 10px;
+}
+
+section#members table {
+    text-align: center;
+    font-weight: bold;
+
+    margin-left:auto;
+    margin-right:auto;
+}
+
+section#members img {
+    width: 160px;
+    height: 160px;
+}
+
+section#members td {
+    align-content: center;
+    padding: 0px 50px 0px 50px;
+}
+
+/* ===========================
+         Footer Section
+   ========================= */
+footer {
+  background-color: rgb(8, 87, 63);
+  margin: -40px 0 0;
+  padding: 0;
+  height: 40px;
+}
+footer div.made_by p {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-size: 90%;
+}
+footer div.made_by p a {
+  color: rgb(252, 183, 57);
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(255, 242, 140, 0.3);
+  outline: none !important;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+footer div.made_by p a:hover {
+  border-bottom: 1px solid;
+}
+
+/* iPad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  section#welcome {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  section#welcome img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto
+  }
+  section.in-between_pic {
+    background-attachment: scroll;
+    background-position: center top !important;
+  }
+}
+/* iPhone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  section#welcome {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  section#welcome img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  section.in-between_pic {
+    background-attachment: scroll;
+    background-position: center top !important;
+  }
+}
+#facebook {
+  position: fixed;
+  top: 25px;
+  right: 0px;
+  z-index: 99999;
+  width: 41px;
+  height: 51px;
+  text-indent: -9999px;
+  display: block;
+  border: 0;
+  text-decoration: none;
+  background: url('../img/facebook.png') no-repeat;
+  background-position: 0 0px;
+}
+
+}
+#facebook:hover {
+  background-position: 0 -51px;
+}
+
+/* =============
+   Helper mixins
+   ============= */
+.cover-bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.inline-block {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+.unselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.unselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.disable-hover {
+  pointer-events: none;
+}
+span.sbrace {
+  margin-right: 0.3em;
+}
+span.hbrace {
+  margin-left: -0.3em;
+}
+span.slaquo {
+  margin-right: 0.44em;
+}
+span.hlaquo {
+  margin-left: -0.44em;
+}
+span.sbdquo {
+  margin-right: 0.35em;
+}
+span.hbdquo {
+  margin-left: -0.35em;
+}
