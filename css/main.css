@@ -172,7 +172,7 @@ section.in-between_pic {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 40%;
+  height: 20%;
   min-height: 50%;
   width: 100%;
 }
@@ -203,24 +203,32 @@ section.in-between_pic.transitionOne {
   display: inline-block; width: 32%; margin-left: 10px;
 }
 
-section#members table {
+section#council table {
     text-align: center;
-    font-weight: bold;
-
-    margin-left:auto;
-    margin-right:auto;
+	width: 100%;
 }
 
-section#members img {
+section#council img {
     width: 160px;
     height: 160px;
 }
 
-section#members td {
+section#council td {
     align-content: center;
-    padding: 0px 50px 0px 50px;
+    padding: 25px 25px 5px 0px;
+    font-weight: bold;
 }
 
+section#members table {
+    text-align: center;
+	width: 100%;
+}
+
+section#members td {
+    align-content: center;
+    padding: 25px 25px 5px 0px;
+    font-weight: bold;
+}
 /* ===========================
          Footer Section
    ========================= */
