@@ -9,7 +9,7 @@ if($_POST["message"]) {
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>UPE@NDSU | Upsilon Pi Epsilon Honor Society</title>
-    <meta name="author" content="NDSU UPE">
+    <meta name="author" content="Carey Wilson">
     <meta name="description" content="Upsilon Pi Epsilon NDSU chapter website.">
     <meta name="viewport" content="width=1000">
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -30,17 +30,19 @@ if($_POST["message"]) {
           <a href="#about" title="About Upsilon Pi Epsilon">About</a>
         </li>
         <li>
-          <a href="#join" title="How to join Upsilon Pi Epsilon">Join</a>
-        </li>
-        <li>
           <a href="#members" title="Members of Upsilon Pi Epsilon">Members</a>
         </li>
         <li>
-          <a href="#news" title="News Updates in Upsilon Pi Epsilon">News</a>
+          <a href="#join" title="How to join Upsilon Pi Epsilon">Join</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/UPE.NDSU?ref=br_tf" title="NDSU U[E Facebook">Facebook</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/NDSU_UPE" title="NDSU UPE Twitter">Twitter</a>
         </li>
       </ul>
     </nav>
-    <a id="facebook" href="https://www.facebook.com/UPE.NDSU" target="_blank">UPE@NDSU</a>
     
     <!----------------------------------------------------
                     Welcome Section
@@ -65,76 +67,6 @@ if($_POST["message"]) {
     </div>
     </section>
       
-      
-    <section class="in-between_pic transitionOne" data-type="background" data-speed="10"></section>
-    <!----------------------------------------------------
-                    Join Section
-    ----------------------------------------------------->  
-    <section id="join" class="page" onclick = "check(event)" style="overflow:hidden;" >
-        <h2>Join our local chapter</h2>
-          <div class="container">
-          <div class="column-left">
-            <h3>Undergraduate Requirements</h3>
-            <p>To be eligible for election to membership, undergraduate students must rank in the upper 35% of the class and shall have attained a GPA, in all college work thus far completed, of not less than 3.0/4.0 grade-points. Furthermore the candidate shall have completed at least 45 semester hours of college work including 15 semester hours in the basic courses in the Computing and Information Disciplines. The Chapter shall have the right to set any limit above this minimum attainment as a basis for eligibility. </p>
-          </div>
-          <div class="column-center">
-            <h3>Graduate Requirements</h3>
-            <p>In order to be eligible for election such graduate students must rank in the upper 35% of the class and shall have been in graduate residence at NDSU at least one semester and shall have completed at least one-half of the number of semester-hours of graduate work normally required for the master's degree, with a GPA of at least 3.5/4.0. The Chapter shall have the right to set any limit above this minimum as a basis for determining eligibility. The scholarship record may be supplemented by information from the candidate's director of research as to the quality of his performance, if such research is already in progress. A student who was invited to join UPE as an undergraduate may be re-invited as a first semester graduate student if his undergraduate scholarship rating was at least 3.5/4.0.</p>
-          </div>
-          <div class="column-right">
-            <h3>Faculty Requirements</h3>
-            <p>This section includes persons who are members of the faculties of programs that are related to the Computing and Information Disciplines or other allied computer fields. In order to be eligible for membership, such faculty members shall have been in full time employ of NDSU for at least one-half year and in responsible charge of some of the undergraduate or graduate courses or important research work of the institution. Eligibility of a faculty member shall be based mainly upon his/her present achievements as denoted by his/her degrees, rank, publications, high standards of scholarship maintained in classes or research work, honors and membership in other societies, and potential future interests in our Association.</p>
-          </div>
-        </div>
-        
-        <div id="buttonPos"><button class="column-center" id = "popup" onclick ="div_show()">Request Membership</button></div>
-        
- <div id="abc">
- 
-	 <!-- Popup div starts here -->
- <div id="popupContact"> 
-
-	<!-- contact us form -->
-		<form action="index.php" method="post" id="form" >
-			<img src="img/form/3.png" id="close"/>
-			<h2 id="formHead">Request Membership</h2><hr/>
-			<input type="text" name="name" id="name" placeholder="Full Name"/>
-            <input type="text" name="studentid" id="studentid" placeholder="Student ID#"/>
-			<input type="text" name="email" id="email" placeholder="Email"/>
-            <br><span class="labels">Degree Level:</span>
-            <select name="degree" id="degree">
-              <option value="-" selected>-</option>
-              <option value="Undergraduate">Undergraduate</option>
-              <option value="Undergraduate">Graduate</option>
-              <option value="Undergraduate">Faculty</option>
-            </select>
-            <br><span class="labels">Year:</span><br>
-			<select name="class" id="class">
-              <option value="-" selected>-</option>
-              <option value="Freshman">Freshman</option>
-              <option value="Sophmore">Sophmore</option>
-              <option value="Junior">Junior</option>
-              <option value="Senior">Senior</option>
-            </select>
-            <br><span class="labels">Expected Graduation Date:</span>
-            <select name="gradTerm" id="gradTerm">
-              <option value="-" selected>-</option>
-              <option value="Fall">Fall</option>
-              <option value="Spring">Spring</option>
-              <option value="Summer">Summer</option>
-            </select>
-            <input type="text" name="year" id="year" placeholder="Year"/>
-            <textarea name="message" placeholder="Message" id="msg"></textarea>
-			<a id="submit" href="javascript: check_empty()">Send</a>
-		</form>
- </div> 
- <!-- Popup div ends here -->
- </div>
-    
-    </section>
-    
-      
-    <section class="in-between_pic transitionTwo" data-type="background" data-speed="10"></section>
     <!----------------------------------------------------
                     Council Section
     ----------------------------------------------------->
@@ -143,9 +75,9 @@ if($_POST["message"]) {
           <h2> Executive Council</h2>
         <table>
               <tr>
-                <td>Faculty Advisor<br><img src="img/members/sameer.jpg" alt="Photo of Sameer"><br>Sameer Abufardeh</td>
-                <td>Faculty Advisor<br><img src="img/members/gursimran.jpg" alt="Photo of Gursimran"><br>Gursimran Walia</td>
-                <td>Faculty Advisor<br><img src="img/members/oksana.jpg" alt="Photo of Oksana"><br>Oksana Myronovych</td>
+                <td>Faculty Advisor<br><img src="img/members/sameer.jpg" alt="Photo of Sameer"><br><a href="http://www.cs.ndsu.nodak.edu/~abufarde/">Dr. Sameer Abufardeh</a></td>
+                <td>Faculty Advisor<br><img src="img/members/gursimran.jpg" alt="Photo of Gursimran"><br><a href="http://www.gursimransinghwalia.com/">Dr. Gursimran Walia</a></td>
+                <td>Faculty Advisor<br><img src="img/members/oksana.jpg" alt="Photo of Oksana"><br><a href="http://www.cs.ndsu.nodak.edu/faculty.htm">Dr. Oksana Myronovych</a></td>
 				<td>President<br><img src="img/members/deovandski.jpg" alt="Photo of Deovandski"><br>Deovandski Skibinski Junior</td>
               </tr>
               <tr><td><br></td></tr>
@@ -327,17 +259,71 @@ if($_POST["message"]) {
 		</table>
     </section>
     
-      
-    <section class="in-between_pic transitionThree" data-type="background" data-speed="20"></section>
+    <section class="in-between_pic transitionOne" data-type="background" data-speed="100"></section>
     <!----------------------------------------------------
-                    News Section
-    ----------------------------------------------------->
-    <section id="news" class="page">
-      <div class="container">
-        <h2>News</h2>
-		<p>Please visit our Facebook page for up to date information.</p>
-        <!--<h3>Fall 2014</h3><p>Upsilon Pi Epsilon events include student mentorship, tech talks, professor talks, and company information sessions.  Members both learn and teach through becoming mentors of incoming underclassmen. Tech talks aim to get students excited about innovations and current technologies.  Company information sessions make students aware of the wide range of opportunities that are available to them, ranging from startups to small companies to grad school to government agencies to huge corporations. </p>-->
-    </div>
+                    Join Section
+    ----------------------------------------------------->  
+    <section id="join" class="page" onclick = "check(event)" style="overflow:hidden;" >
+        <h2>Join our local chapter</h2>
+          <div class="container">
+          <div class="column-left">
+            <h3>Undergraduate Requirements</h3>
+            <p>To be eligible for election to membership, undergraduate students must rank in the upper 35% of the class and shall have attained a GPA, in all college work thus far completed, of not less than 3.0/4.0 grade-points. Furthermore the candidate shall have completed at least 45 semester hours of college work including 15 semester hours in the basic courses in the Computing and Information Disciplines. The Chapter shall have the right to set any limit above this minimum attainment as a basis for eligibility. </p>
+          </div>
+          <div class="column-center">
+            <h3>Graduate Requirements</h3>
+            <p>In order to be eligible for election such graduate students must rank in the upper 35% of the class and shall have been in graduate residence at NDSU at least one semester and shall have completed at least one-half of the number of semester-hours of graduate work normally required for the master's degree, with a GPA of at least 3.5/4.0. The Chapter shall have the right to set any limit above this minimum as a basis for determining eligibility. The scholarship record may be supplemented by information from the candidate's director of research as to the quality of his performance, if such research is already in progress. A student who was invited to join UPE as an undergraduate may be re-invited as a first semester graduate student if his undergraduate scholarship rating was at least 3.5/4.0.</p>
+          </div>
+          <div class="column-right">
+            <h3>Faculty Requirements</h3>
+            <p>This section includes persons who are members of the faculties of programs that are related to the Computing and Information Disciplines or other allied computer fields. In order to be eligible for membership, such faculty members shall have been in full time employ of NDSU for at least one-half year and in responsible charge of some of the undergraduate or graduate courses or important research work of the institution. Eligibility of a faculty member shall be based mainly upon his/her present achievements as denoted by his/her degrees, rank, publications, high standards of scholarship maintained in classes or research work, honors and membership in other societies, and potential future interests in our Association.</p>
+          </div>
+        </div>
+        
+        <div id="buttonPos"><button class="column-center" id = "popup" onclick ="div_show()">Request Membership</button></div>
+        
+ <div id="abc">
+ 
+	 <!-- Popup div starts here -->
+ <div id="popupContact"> 
+
+	<!-- contact us form -->
+		<form action="index.php" method="post" id="form" >
+			<img src="img/form/3.png" id="close"/>
+			<h2 id="formHead">Request Membership</h2><hr/>
+			<input type="text" name="name" id="name" placeholder="Full Name"/>
+            <input type="text" name="studentid" id="studentid" placeholder="Student ID#"/>
+			<input type="text" name="email" id="email" placeholder="Email"/>
+            <br><span class="labels">Degree Level:</span>
+            <select name="degree" id="degree">
+              <option value="-" selected>-</option>
+              <option value="Undergraduate">Undergraduate</option>
+              <option value="Undergraduate">Graduate</option>
+              <option value="Undergraduate">Faculty</option>
+            </select>
+            <br><span class="labels">Year:</span><br>
+			<select name="class" id="class">
+              <option value="-" selected>-</option>
+              <option value="Freshman">Freshman</option>
+              <option value="Sophmore">Sophmore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+            </select>
+            <br><span class="labels">Expected Graduation Date:</span>
+            <select name="gradTerm" id="gradTerm">
+              <option value="-" selected>-</option>
+              <option value="Fall">Fall</option>
+              <option value="Spring">Spring</option>
+              <option value="Summer">Summer</option>
+            </select>
+            <input type="text" name="year" id="year" placeholder="Year"/>
+            <textarea name="message" placeholder="Message" id="msg"></textarea>
+			<a id="submit" href="javascript: check_empty()">Send</a>
+		</form>
+ </div> 
+ <!-- Popup div ends here -->
+ </div>
+    
     </section>
     
     <!----------------------------------------------------
@@ -346,7 +332,7 @@ if($_POST["message"]) {
     <footer>
       <div class="made_by">
         <p>
-          <a href="http://www.ndsu.edu/" title="NDSU Home Page" target="_blank">North Dakota State University</a> | <a href="http://cs.ndsu.edu/" title="CSCI Dept Page" target="_blank">Computer Science Department</a> | <a href="https://github.com/Deovandski/UPE_NDSU_WEBSITE" title="Github Repository" target="_blank">Source Code</a> | Quinten Burdick Building 258 | 701.231.8562
+          <a href="http://www.ndsu.edu/" title="NDSU Home Page" target="_blank">North Dakota State University</a> | <a href="http://cs.ndsu.edu/" title="CSCI Dept Page" target="_blank">Computer Science Department</a> | Quinten Burdick Building 258 | 701.231.8562
         </p>
       </div>
     </footer>
