@@ -21,6 +21,7 @@ h2 {
   text-transform: uppercase;
   font-size: 200%;
   letter-spacing: 1px;
+  text-align: center;
 }
 /* ===========
    Main styles
@@ -136,7 +137,7 @@ section#welcome img.cover {
    ========================= */
 section.page {
   *zoom: 1;
-  padding: 50px 10px 50px 50px;
+  padding: 50px 50px 50px 50px;
   min-height: 500px;
     backgrond-color: white;
 }
@@ -209,13 +210,13 @@ section#council table {
 }
 
 section#council img {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 280px;
 }
 
 section#council td {
     align-content: center;
-    padding: 25px 25px 5px 0px;
+    padding: 25px 25px 5px 25px;
     font-weight: bold;
 }
 
@@ -226,7 +227,8 @@ section#members table {
 
 section#members td {
     align-content: center;
-    padding: 25px 25px 5px 0px;
+    width: 25%;
+	padding: 10px 0px 10px 0px;
     font-weight: bold;
 }
 /* ===========================
